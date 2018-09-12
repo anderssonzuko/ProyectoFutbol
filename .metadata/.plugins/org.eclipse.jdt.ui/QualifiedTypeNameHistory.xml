@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="cambio.entity.Cambio"/>
-    <fullyQualifiedTypeName name="equipo.entity.Equipo"/>
-    <fullyQualifiedTypeName name="estadistica.entity.Estadistica"/>
-    <fullyQualifiedTypeName name="jugador.entity.Jugador"/>
-</qualifiedTypeNameHistroy>
