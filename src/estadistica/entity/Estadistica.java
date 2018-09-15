@@ -3,28 +3,26 @@ package estadistica.entity;
 public class Estadistica {
 
 	private int codigoEstadistica;
-	private int codigoTarjeta;
-	private int codigoEquipo;
-	private int codigoJugador;
-	private int disparos;
-	private int posesion;
-	private int tirosLibres;
-	private int corners;
-	private int penales;
-	private int fueraDeJuego;
-	private int goles;
-	private int codigoCambio;
+	private String codigoTarjetas;
+	private String codigoEquipos;
+	private String disparos;
+	private String posesion;
+	private String tirosLibres;
+	private String corners;
+	private String penales;
+	private String fueraDeJuego;
+	private String goles;
+	private String codigoCambios;
 	
 
 
-	public Estadistica(int codigoEstadistica,int codigoTarjeta,int codigoEquipo, 
-			int codigoJugador, int disparos, int posesion,int tirosLibres,int corners,
-			int penales,int fueraDeJuego,int goles,int codigoCambio) {
+	public Estadistica(int codigoEstadistica,String codigoTarjetas,String codigoEquipos, 
+			String disparos, String posesion, String tirosLibres, String corners,
+			String penales, String fueraDeJuego, String goles,String codigoCambios) {
 		
 		this.codigoEstadistica = codigoEstadistica;
-		this.codigoTarjeta = codigoTarjeta;
-		this.codigoEquipo = codigoEquipo;
-		this.codigoJugador = codigoJugador;
+		this.codigoTarjetas = codigoTarjetas;
+		this.codigoEquipos = codigoEquipos;
 		this.disparos = disparos;
 		this.posesion = posesion;
 		this.tirosLibres = tirosLibres;
@@ -32,7 +30,7 @@ public class Estadistica {
 		this.penales = penales;
 		this.fueraDeJuego = fueraDeJuego;
 		this.goles = goles;
-		this.codigoCambio = codigoCambio;
+		this.codigoCambios = codigoCambios;
 
 	}
 
@@ -50,146 +48,132 @@ public class Estadistica {
 
 
 
-	public int getCodigoTarjeta() {
-		return codigoTarjeta;
+	public String getCodigoTarjetas() {
+		return codigoTarjetas;
 	}
 
 
 
-	public void setCodigoTarjeta(int codigoTarjeta) {
-		this.codigoTarjeta = codigoTarjeta;
+	public void setCodigoTarjetas(String codigoTarjetas) {
+		this.codigoTarjetas = codigoTarjetas;
 	}
 
 
 
-	public int getCodigoEquipo() {
-		return codigoEquipo;
+	public String getCodigoEquipos() {
+		return codigoEquipos;
 	}
 
 
 
-	public void setCodigoEquipo(int codigoEquipo) {
-		this.codigoEquipo = codigoEquipo;
+	public void setCodigoEquipos(String codigoEquipos) {
+		this.codigoEquipos = codigoEquipos;
 	}
 
 
 
-	public int getCodigoJugador() {
-		return codigoJugador;
-	}
-
-
-
-	public void setCodigoJugador(int codigoJugador) {
-		this.codigoJugador = codigoJugador;
-	}
-
-
-
-	public int getDisparos() {
+	public String getDisparos() {
 		return disparos;
 	}
 
 
 
-	public void setDisparos(int disparos) {
+	public void setDisparos(String disparos) {
 		this.disparos = disparos;
 	}
 
 
 
-	public int getPosesion() {
+	public String getPosesion() {
 		return posesion;
 	}
 
 
 
-	public void setPosesion(int posesion) {
+	public void setPosesion(String posesion) {
 		this.posesion = posesion;
 	}
 
 
 
-	public int getTirosLibres() {
+	public String getTirosLibres() {
 		return tirosLibres;
 	}
 
 
 
-	public void setTirosLibres(int tirosLibres) {
+	public void setTirosLibres(String tirosLibres) {
 		this.tirosLibres = tirosLibres;
 	}
 
 
 
-	public int getCorners() {
+	public String getCorners() {
 		return corners;
 	}
 
 
 
-	public void setCorners(int corners) {
+	public void setCorners(String corners) {
 		this.corners = corners;
 	}
 
 
 
-	public int getPenales() {
+	public String getPenales() {
 		return penales;
 	}
 
 
 
-	public void setPenales(int penales) {
+	public void setPenales(String penales) {
 		this.penales = penales;
 	}
 
 
 
-	public int getFueraDeJuego() {
+	public String getFueraDeJuego() {
 		return fueraDeJuego;
 	}
 
 
 
-	public void setFueraDeJuego(int fueraDeJuego) {
+	public void setFueraDeJuego(String fueraDeJuego) {
 		this.fueraDeJuego = fueraDeJuego;
 	}
 
 
 
-	public int getGoles() {
+	public String getGoles() {
 		return goles;
 	}
 
 
 
-	public void setGoles(int goles) {
+	public void setGoles(String goles) {
 		this.goles = goles;
 	}
 
 
 
-	public int getCodigoCambio() {
-		return codigoCambio;
+	public String getCodigoCambios() {
+		return codigoCambios;
 	}
 
 
 
-	public void setCodigoCambio(int codigoCambio) {
-		this.codigoCambio = codigoCambio;
+	public void setCodigoCambios(String codigoCambios) {
+		this.codigoCambios = codigoCambios;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "Estadistica [codigoEstadistica=" + codigoEstadistica + ", codigoTarjeta=" + codigoTarjeta
-				+ ", codigoEquipo=" + codigoEquipo + ", codigoJugador=" + codigoJugador + ", disparos=" + disparos
-				+ ", posesion=" + posesion + ", tirosLibres=" + tirosLibres + ", corners=" + corners + ", penales="
-				+ penales + ", fueraDeJuego=" + fueraDeJuego + ", goles=" + goles + ", codigoCambio=" + codigoCambio
-				+ "]";
+		return "Estadistica [codigoEstadistica=" + codigoEstadistica + ", codigoTarjetas=" + codigoTarjetas
+				+ ", codigoEquipos=" + codigoEquipos + ", disparos=" + disparos + ", posesion=" + posesion
+				+ ", tirosLibres=" + tirosLibres + ", corners=" + corners + ", penales=" + penales + ", fueraDeJuego="
+				+ fueraDeJuego + ", goles=" + goles + ", codigoCambios=" + codigoCambios + "]";
 	}
-	
-	
+
 }

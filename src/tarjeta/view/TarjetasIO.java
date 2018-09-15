@@ -34,7 +34,6 @@ public class TarjetasIO {
 			conexion.modificacion();
 			}catch (SQLException e) {
 				throw new NoExisteJugador();
-				throw new NoExisteEquipo();
 			}
 	}
 	public void delete() {

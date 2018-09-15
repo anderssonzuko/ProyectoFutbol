@@ -6,18 +6,20 @@ public class Tarjeta {
 	private int codigoJugador;
 	private int codigoPartido;
 	private String tipo;
-	private int montoMulta;
+	private double montoMulta;
+	private int minuto;
 	
 
 
 	public Tarjeta(int codigoTarjeta,int codigoJugador,int codigoPartido,String tipo,
-			int montoMulta) {
+			double montoMulta, int minuto) {
 		
 		this.codigoTarjeta = codigoTarjeta;
 		this.codigoJugador = codigoJugador;
 		this.codigoPartido = codigoPartido;
 		this.tipo = tipo ;
 		this.montoMulta = montoMulta;
+		this.minuto = minuto;
 	}
 
 
@@ -70,14 +72,27 @@ public class Tarjeta {
 
 
 
-	public int getMontoMulta() {
+	public double getMontoMulta() {
 		return montoMulta;
 	}
 
 
 
-	public void setMontoMulta(int montoMulta) {
+	public void setMontoMulta(double montoMulta) {
 		this.montoMulta = montoMulta;
+	}
+
+	
+
+
+	public int getMinuto() {
+		return minuto;
+	}
+
+
+
+	public void setMinuto(int minuto) {
+		this.minuto = minuto;
 	}
 
 
@@ -85,8 +100,10 @@ public class Tarjeta {
 	@Override
 	public String toString() {
 		return "Tarjeta [codigoTarjeta=" + codigoTarjeta + ", codigoJugador=" + codigoJugador + ", codigoPartido="
-				+ codigoPartido + ", tipo=" + tipo + ", montoMulta=" + montoMulta + "]";
+				+ codigoPartido + ", tipo=" + tipo + ", montoMulta=" + montoMulta + ", minuto=" + minuto + "]";
 	}
+
+
 	
 	
 }

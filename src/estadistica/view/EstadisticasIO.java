@@ -17,7 +17,7 @@ public class EstadisticasIO {
 		this.scanner = scanner;
 	}
 	
-	public void add() {
+	public void add() throws SQLException {
 		Estadistica estadistica = EstadisticaIO.ingresar(scanner);
 		String sql = "Insert into Estadistica (codigoTarjetas, codigoEquipos, disparos, posesion, tirosLibres, corners, penales, fueraDeJuego, goles, codigoCambios) values(?,?,?,?,?,?,?,?,?,?)";
 			conexion.consulta(sql);

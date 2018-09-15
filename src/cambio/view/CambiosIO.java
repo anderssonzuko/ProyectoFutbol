@@ -31,7 +31,6 @@ public class CambiosIO {
 			conexion.modificacion();
 		} catch (SQLException e) {
 			throw new NoExistePartido();
-			throw new NoExisteJugador();
 		}
 	}
 	public void delete() {

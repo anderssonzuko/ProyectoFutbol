@@ -31,9 +31,8 @@ public class Menu {
 		}
 	}
 
-	public static void menu(Scanner scanner, ArbitrosIO arbitrosIO, Menu menu) throws NoExisteArbitro, SQLException, NoExistePartido {
+	public static void menu(Scanner scanner, ArbitrosIO arbitrosIO) throws NoExisteArbitro, SQLException, NoExistePartido {
 		boolean salir = false;
-		Arbitro arbitro;
 		while (!salir) {
 			switch (encabezado(scanner)) {
 			case 0:

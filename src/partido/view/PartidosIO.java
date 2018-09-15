@@ -35,7 +35,6 @@ public class PartidosIO {
 			conexion.modificacion();
 			}catch (SQLException e) {
 				throw new NoExisteArbitro();
-				throw new NoExisteEstadistica();
 			}
 	}
 	public void delete() {

@@ -30,7 +30,7 @@ public class Menu {
 		}
 	}
 
-	public static void menu(Scanner scanner, EquiposIO equiposIO, Menu menu) throws NoExisteEquipo, SQLException{
+	public static void menu(Scanner scanner, EquiposIO equiposIO) throws NoExisteEquipo, SQLException{
 		boolean salir = false;
 
 		while (!salir) {

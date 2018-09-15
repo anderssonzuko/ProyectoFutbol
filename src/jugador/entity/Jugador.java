@@ -12,10 +12,11 @@ public class Jugador {
 	private String nacionalidad;
 	private double altura;
 	private double peso;
+	private String pieHabil;
 	
 	public Jugador(int codigoJugador, int codigoEquipo, int DNI, String nombreCompleto,
 			String fechaNacimiento, int numeroPolera, double sueldo, String nacionalidad,
-			double altura, double peso) {
+			double altura, double peso, String pieHabil) {
 		this.codigoJugador = codigoJugador;
 		this.codigoEquipo = codigoEquipo;
 		this.DNI = DNI;
@@ -26,6 +27,7 @@ public class Jugador {
 		this.nacionalidad = nacionalidad;
 		this.altura = altura;
 		this.peso = peso;
+		this.pieHabil = pieHabil;
 	}
 
 	public Integer getCodigoJugador() {
@@ -108,11 +110,21 @@ public class Jugador {
 		this.peso = peso;
 	}
 
+	public String getPieHabil() {
+		return pieHabil;
+	}
+
+	public void setPieHabil(String pieHabil) {
+		this.pieHabil = pieHabil;
+	}
+
 	@Override
 	public String toString() {
 		return "Jugador [codigoJugador=" + codigoJugador + ", codigoEquipo=" + codigoEquipo + ", DNI=" + DNI
 				+ ", nombreCompleto=" + nombreCompleto + ", fechaNacimiento=" + fechaNacimiento + ", numeroPolera="
 				+ numeroPolera + ", sueldo=" + sueldo + ", nacionalidad=" + nacionalidad + ", altura=" + altura
-				+ ", peso=" + peso + "]";
+				+ ", peso=" + peso + ", pieHabil=" + pieHabil + "]";
 	}
+
+	
 }

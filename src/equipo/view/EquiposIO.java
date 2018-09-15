@@ -18,7 +18,7 @@ public class EquiposIO {
 		this.scanner = scanner;
 	}
 	
-	public void add() {
+	public void add() throws SQLException {
 		Equipo equipo = EquipoIO.ingresar(scanner);
 		String sql = "Insert into Equipo (nombre, ciudad, presupuestoAnual) values(?,?,?)";
 			conexion.consulta(sql);
