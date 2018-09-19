@@ -9,7 +9,7 @@ public class EquipoIO {
 
 	public static Equipo ingresar(Scanner scanner) {
 		int codigoEquipo =
-				InputTypes.readInt("Ingrese el código del Equipo: ", scanner);
+				InputTypes.readInt("El codigo del equipo se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		String nombre =
 				InputTypes.readString("Ingrese el nombre del equipo: ", scanner);
 		String ciudad =

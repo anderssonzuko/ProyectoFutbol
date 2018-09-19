@@ -10,7 +10,7 @@ public class PartidoIO {
 	public static Partido ingresar(Scanner scanner) {
 		
 		int codigoPartido =
-				InputTypes.readInt("Ingrese el codigo del partido: ", scanner);
+				InputTypes.readInt("El codigo del partido se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		int codigoEquipo1 =
 				InputTypes.readInt("Ingrese el codigo del equipo local: ", scanner);
 		int codigoEquipo2 = 

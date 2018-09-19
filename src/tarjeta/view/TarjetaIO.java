@@ -10,7 +10,7 @@ public class TarjetaIO {
 	public static Tarjeta ingresar(Scanner scanner) {
 		
 		int codigoTarjeta =
-				InputTypes.readInt("Ingrese el codigo de la tarjeta: ", scanner);
+				InputTypes.readInt("El codigo de la tarjeta se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		int codigoJugador =
 				InputTypes.readInt("Ingrese el codigo del jugador al que fue sacada la tarjeta: ", scanner);
 		int codigoPartido =

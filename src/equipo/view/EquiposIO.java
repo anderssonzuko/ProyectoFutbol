@@ -72,6 +72,7 @@ public class EquiposIO {
 		conexion.getSentencia().setString(1, equipo.getNombre());
 		conexion.getSentencia().setString(2, equipo.getCiudad());
 		conexion.getSentencia().setInt(3, equipo.getPresupuestoAnual());
+		conexion.getSentencia().setInt(4, equipo.getCodigoEquipo());
 		conexion.modificacion();
 	}
 	

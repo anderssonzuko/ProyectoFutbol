@@ -10,7 +10,7 @@ public class CambioIO {
 	public static Cambio ingresar(Scanner scanner) {
 		
 		int codigoCambio = 
-				InputTypes.readInt("Ingrese el codigo del cambio: ", scanner);
+				InputTypes.readInt("El codigo del cambio se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		int codigoJugador =
 				InputTypes.readInt("Ingrese el codigo del jugador: ", scanner);
 		int codigoPartido =

@@ -9,7 +9,7 @@ public class EstadisticaIO {
 
 	public static Estadistica ingresar(Scanner scanner) {
 		int codigoEstadistica =
-				InputTypes.readInt("Ingrese el código de la tabla de estadisticas: ", scanner);
+				InputTypes.readInt("El codigo de la taba de estadisticas se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		String codigoTarjetas =
 				InputTypes.readString("Ingrese los codigos de las tarjetas que se sacaron: ", scanner);
 		String codigoEquipos =

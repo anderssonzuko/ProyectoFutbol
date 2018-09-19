@@ -10,7 +10,7 @@ public class JugadorIO {
 	public static Jugador ingresar(Scanner scanner) {
 		
 		int codigoJugador =
-				InputTypes.readInt("Ingrese el código del Jugador: ", scanner);
+				InputTypes.readInt("El codigo del jugador se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		int codigoEquipo =
 				InputTypes.readInt("Ingrese el codigo del equipo en que juega: ", scanner);
 		int DNI =

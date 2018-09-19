@@ -9,7 +9,7 @@ public class ArbitroIO {
 
 	public static Arbitro ingresar(Scanner scanner) {
 		int codigoArbitro = 
-				InputTypes.readInt("Ingrese el código del arbitro: ", scanner);
+				InputTypes.readInt("El codigo del arbitro se generará solo, de igual manera agregar cualquier numero para avanzar: ", scanner);
 		int codigoPartido = 
 				InputTypes.readInt("Ingrese el codigo del partido que dirigió: ", scanner);
 		int DNI =
